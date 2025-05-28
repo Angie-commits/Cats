@@ -6,20 +6,19 @@
 
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background: linear-gradient(to bottom, #fad0c4 0%, #fad0c4 50%, white 40%, white 100%);
+            background: linear-gradient(to bottom, #fad0c4 0%, #fad0c4 45%, white 40%, white 100%);
             min-height: 100vh;
             padding: 20px;
         }
     
         .container {
-            max-width: 1200px;%
+            max-width: 1200px;
             margin: 0 auto;
         }
 
         .header {
             text-align: center;
             margin-bottom: 40px;
-
         }
 
         .header h1 {
@@ -70,7 +69,7 @@
         .input-group input:focus {
             outline: none;
             background: rgba(255, 255, 255, 0.95);
-            box-shadow: 0 0 0 2px rgba(183, 148, 171, 0.3);
+          
         }
 
         .submit-btn {
@@ -142,13 +141,10 @@
 
         .fact-item {
             background: rgba(255, 255, 255, 0.6);
-            padding: 15px;
             margin-bottom: 15px;
-            border-radius: 10px;
-            border-left: 4px solid #b794ab;
             font-size: 0.95rem;
             line-height: 1.5;
-            color: #444;
+            color: black;
         }
 
         .photo-grid {
@@ -186,13 +182,7 @@
             .header h1 {
                 font-size: 2rem;
             }
-
-            .form-container,
-            .results-container {
-                grid-template-columns: 1fr;
-                gap: 20px;
-            }
-
+        }
             .form-section,
             .results-section {
                 padding: 20px;
@@ -210,7 +200,6 @@
             .photo-item img {
                 height: 150px;
             }
-        }
 
         @media (max-width: 480px) {
             body {
@@ -224,9 +213,5 @@
             .form-section,
             .results-section {
                 padding: 15px;
-            }
-
-            .photo-grid {
-                grid-template-columns: 1fr;
             }
         }
