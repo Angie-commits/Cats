@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Cats App</title>
+    <link rel="stylesheet" href="./src/style.css" />
+  </head>
+  <body>
+    <div class="container">
+        <div class="header">
+            <h1>The Cats App</h1>
+        </div>
+
+        <div class="form-container">
+            <div class="form-section">
+                <h2>Number Of Cats Facts (50 Maximum)</h2>
+                <div class="input-group">
+                    <input type="number" id="factsInput" placeholder="number of cat facts (50 max)" min="1" max="50">
+                    <button class="submit-btn" id="factsBtn">Submit</button>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>Number Of Cats Photos (10 Max)</h2>
+                <div class="input-group">
+                    <input type="number" id="photosInput" placeholder="number of cat photos (10 max)" min="1" max="10">
+                    <button class="submit-btn" id="photosBtn">Submit</button>
+                </div>
+            </div>
+        </div>
+        <div id="loadingContainer" class="loading-container hidden">
+            <div class="loading-spinner"></div>
+        </div>
+
+        <div id="errorContainer" class="error hidden"></div>
+
+        <div id="resultsContainer" class="results-container hidden">
+            <div id="factsSection" class="results-section hidden">
+              
+                <div id="factsResults"></div>
+            </div>
+            <div id="photosSection" class="results-section hidden">
+                <div id="photosResults" class="photo-grid"></div>
+            </div>
+        </div>
+    </div>
+    <script src="./src/script.js"></script>
+  </body>
+</html>
